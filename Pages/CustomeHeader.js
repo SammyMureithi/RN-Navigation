@@ -4,7 +4,10 @@ import HeaderBar from '../Coponents/HeaderBar'
 
 
 function CustomeHeader( { route, navigation } ) {
-navigation.setOptions( { headerTitle: ( props ) => <HeaderBar {...props} />})
+  navigation.setOptions( {
+    headerTitle: ( props ) => <HeaderBar {...props} />,
+    headerRight: () => ( <Text>Twitter</Text> ),
+  } )
   return (
       <View>
           <Text>Custome Header</Text>

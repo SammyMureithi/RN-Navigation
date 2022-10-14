@@ -13,7 +13,8 @@ function HomePage( { navigation } ) {
               userId:  userId ,
               userName:"Sammy"
           } )} />
-          <Button title="Customer Header Bar" onPress={()=>navigation.navigate("Bar")}/>
+      <Button title="Customer Header Bar" onPress={() => navigation.navigate( "Bar" )} />
+      <Button title='Nested Navigation' onPress={()=>navigation.navigate('NestedNavigation')}/>
     </View>
   )
 }
